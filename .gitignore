@@ -53,8 +53,14 @@ sysinfo.txt
 
 # Builds
 *.apk
-*.unitypackage
+*.unitypackageS
 
 # Crashlytics generated file
 crashlytics-build.properties
+
+#Custom ignored folders 
+Assets/Graphics/
+
+#Corresponding META files
+Assets/Graphics.meta
 
