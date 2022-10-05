@@ -22,10 +22,12 @@ public class LevelSelector : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            
             levelText.gameObject.SetActive(true);
             LevelSelection();
         }        
     }
+
     public void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
@@ -34,11 +36,12 @@ public class LevelSelector : MonoBehaviour
         }
     }
 
-   public void LevelSelection()
+    public void LevelSelection()
     {
-        if(Input.GetKeyUp(KeyCode.E))
+        if (Input.GetKey(KeyCode.E))
         {
             SceneManager.LoadScene(scenePath);
+            
         }
     }
 }

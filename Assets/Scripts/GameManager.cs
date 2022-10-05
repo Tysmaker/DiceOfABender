@@ -26,6 +26,8 @@ public class GameManager : MonoBehaviour
 
         switch (newState)
         {
+            case GameState.Dialogue;
+                break;
             case GameState.PlayerTurn:
                 break;
             case GameState.Enemyturn:
@@ -34,6 +36,7 @@ public class GameManager : MonoBehaviour
                 break;
             case GameState.Lose:
                 break;
+
 
                 default:
                 throw new ArgumentOutOfRangeException(nameof(newState), newState, null);

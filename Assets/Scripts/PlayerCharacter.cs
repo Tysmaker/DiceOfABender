@@ -22,7 +22,7 @@ public class PlayerCharacter : MonoBehaviour
         leftRight = Input.GetAxisRaw("Horizontal");
 
         rb.velocity = new Vector2(leftRight * pSpeed, upDown * pSpeed);
-
+            
         if (leftRight > 0 && !facingRight)
         {
             Flip();
@@ -53,7 +53,5 @@ public class PlayerCharacter : MonoBehaviour
 
         level = data.level; 
         health = data.health;
-
-
     }
 }
