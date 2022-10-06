@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 38739019}
   - component: {fileID: 38739020}
   m_Layer: 0
-  m_Name: collision1 (6)
+  m_Name: collision7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2048,10 +2048,10 @@ GameObject:
   m_Component:
   - component: {fileID: 118516899}
   - component: {fileID: 118516900}
-  - component: {fileID: 118516901}
   - component: {fileID: 118516902}
+  - component: {fileID: 118516903}
   m_Layer: 0
-  m_Name: Circle1 (3)
+  m_Name: Level4Object
   m_TagString: Level4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2124,22 +2124,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &118516901
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 118516898}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.04279673}
-  serializedVersion: 2
-  m_Radius: 0.42510575
 --- !u!114 &118516902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2154,6 +2138,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelText: {fileID: 1162267851}
   scenePath: Level4
+--- !u!58 &118516903
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118516898}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00000017881393, y: 0.00000023841858}
+  serializedVersion: 2
+  m_Radius: 0.30999997
 --- !u!1 &125510154
 GameObject:
   m_ObjectHideFlags: 0
@@ -2165,7 +2165,7 @@ GameObject:
   - component: {fileID: 125510155}
   - component: {fileID: 125510156}
   m_Layer: 0
-  m_Name: collision1 (5)
+  m_Name: collision6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2223,7 +2223,7 @@ GameObject:
   - component: {fileID: 302727755}
   - component: {fileID: 302727756}
   m_Layer: 0
-  m_Name: collision1 (7)
+  m_Name: collision8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2416,7 +2416,7 @@ GameObject:
   - component: {fileID: 487141271}
   - component: {fileID: 487141272}
   m_Layer: 0
-  m_Name: collision1 (1)
+  m_Name: collision2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2474,7 +2474,7 @@ GameObject:
   - component: {fileID: 576077898}
   - component: {fileID: 576077899}
   m_Layer: 0
-  m_Name: collision1 (10)
+  m_Name: collision12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2554,10 +2554,10 @@ RectTransform:
   m_Father: {fileID: 736559216}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -409, y: -360}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -759, y: -248}
+  m_SizeDelta: {x: -1720, y: -1030}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &658585079
 MonoBehaviour:
@@ -2908,10 +2908,10 @@ GameObject:
   m_Component:
   - component: {fileID: 737705154}
   - component: {fileID: 737705155}
-  - component: {fileID: 737705156}
   - component: {fileID: 737705157}
+  - component: {fileID: 737705158}
   m_Layer: 0
-  m_Name: Circle1 (5)
+  m_Name: Level6Object
   m_TagString: Level6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2984,22 +2984,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &737705156
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737705153}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.11605607, y: 0.19895235}
-  serializedVersion: 2
-  m_Radius: 1.2792294
 --- !u!114 &737705157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3014,6 +2998,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelText: {fileID: 902625706}
   scenePath: Level6
+--- !u!58 &737705158
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737705153}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.00000047683716}
+  serializedVersion: 2
+  m_Radius: 1.56
 --- !u!1 &875789794
 GameObject:
   m_ObjectHideFlags: 0
@@ -3024,10 +3024,10 @@ GameObject:
   m_Component:
   - component: {fileID: 875789795}
   - component: {fileID: 875789796}
-  - component: {fileID: 875789797}
   - component: {fileID: 875789798}
+  - component: {fileID: 875789799}
   m_Layer: 0
-  m_Name: Circle1 (2)
+  m_Name: Level3Object
   m_TagString: Level3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3100,22 +3100,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &875789797
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 875789794}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!114 &875789798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3130,6 +3114,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelText: {fileID: 676372359}
   scenePath: Level3
+--- !u!58 &875789799
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875789794}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.31
 --- !u!1 &877636373
 GameObject:
   m_ObjectHideFlags: 0
@@ -5628,7 +5628,7 @@ GameObject:
   - component: {fileID: 971757747}
   - component: {fileID: 971757748}
   m_Layer: 0
-  m_Name: collision1 (3)
+  m_Name: collision4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5744,7 +5744,7 @@ GameObject:
   - component: {fileID: 1128017546}
   - component: {fileID: 1128017547}
   m_Layer: 0
-  m_Name: collision1 (2)
+  m_Name: collision3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5936,10 +5936,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1191200965}
   - component: {fileID: 1191200966}
-  - component: {fileID: 1191200967}
   - component: {fileID: 1191200968}
+  - component: {fileID: 1191200969}
   m_Layer: 0
-  m_Name: Circle1 (4)
+  m_Name: Level5Object
   m_TagString: Level5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6012,22 +6012,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &1191200967
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1191200964}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.0096400585}
-  serializedVersion: 2
-  m_Radius: 0.42287922
 --- !u!114 &1191200968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6042,6 +6026,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelText: {fileID: 404296912}
   scenePath: Level5
+--- !u!58 &1191200969
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191200964}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.32
 --- !u!1 &1192924138
 GameObject:
   m_ObjectHideFlags: 0
@@ -6137,7 +6137,7 @@ GameObject:
   - component: {fileID: 1293018506}
   - component: {fileID: 1293018507}
   m_Layer: 0
-  m_Name: collision1 (11)
+  m_Name: collision13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6195,7 +6195,7 @@ GameObject:
   - component: {fileID: 1358219377}
   - component: {fileID: 1358219378}
   m_Layer: 0
-  m_Name: collision1 (8)
+  m_Name: collision10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6252,10 +6252,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1548026322}
   - component: {fileID: 1548026323}
-  - component: {fileID: 1548026324}
   - component: {fileID: 1548026325}
+  - component: {fileID: 1548026326}
   m_Layer: 0
-  m_Name: Circle1 (1)
+  m_Name: Level2Object
   m_TagString: Level2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6328,22 +6328,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &1548026324
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1548026321}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!114 &1548026325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6358,6 +6342,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelText: {fileID: 1873220347}
   scenePath: Level2
+--- !u!58 &1548026326
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548026321}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.31
 --- !u!1 &1563671658
 GameObject:
   m_ObjectHideFlags: 0
@@ -6578,7 +6578,7 @@ GameObject:
   - component: {fileID: 1749925767}
   - component: {fileID: 1749925768}
   m_Layer: 0
-  m_Name: collision1 (9)
+  m_Name: collision11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6635,10 +6635,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1799610431}
   - component: {fileID: 1799610430}
-  - component: {fileID: 1799610432}
   - component: {fileID: 1799610433}
+  - component: {fileID: 1799610434}
   m_Layer: 0
-  m_Name: Circle1
+  m_Name: Level1Object
   m_TagString: Level1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6711,22 +6711,6 @@ Transform:
   m_Father: {fileID: 1563671659}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &1799610432
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1799610429}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.1214617, y: 0}
-  serializedVersion: 2
-  m_Radius: 2.8381424
 --- !u!114 &1799610433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6741,6 +6725,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelText: {fileID: 658585079}
   scenePath: Level1
+--- !u!58 &1799610434
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799610429}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.0000019073486}
+  serializedVersion: 2
+  m_Radius: 3.02
 --- !u!1 &1865918241
 GameObject:
   m_ObjectHideFlags: 0
@@ -6971,7 +6971,7 @@ GameObject:
   - component: {fileID: 1908067806}
   - component: {fileID: 1908067807}
   m_Layer: 0
-  m_Name: collision1 (4)
+  m_Name: collision5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7188,7 +7188,7 @@ GameObject:
   - component: {fileID: 2136578342}
   - component: {fileID: 2136578343}
   m_Layer: 0
-  m_Name: Circle1 (6)
+  m_Name: Level7Object
   m_TagString: Level7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
