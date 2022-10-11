@@ -3498,7 +3498,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &435159304
 Transform:
   m_ObjectHideFlags: 0
@@ -3527,7 +3527,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 1
-  health: 100
+  maxHealth: 100
+  currentHealth: 0
+  healthBar: {fileID: 0}
   pSpeed: 6
   rb: {fileID: 435159307}
 --- !u!212 &435159306
@@ -8973,6 +8975,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1989921171}
   - component: {fileID: 1989921172}
+  - component: {fileID: 1989921173}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -9054,6 +9057,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1989921173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989921170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c427b7414314f4bb5aebca503b7393, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 1989921172}
 --- !u!1 &2004287879
 GameObject:
   m_ObjectHideFlags: 0
