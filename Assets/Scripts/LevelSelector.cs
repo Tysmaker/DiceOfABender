@@ -12,11 +12,25 @@ using UnityEngine.SceneManagement;
 
 public class LevelSelector : MonoBehaviour
 {
+    public Button[] buttons;
 
     public TextMeshProUGUI levelText;
 
     [SerializeField]
     public string scenePath;
+
+    private void Start()
+    {
+        int levelAt = PlayerPrefs.GetInt("levelAt", 2);
+
+        for (int i = 0; i < buttons.Length; i++)
+        {
+            if(i + 2 > levelAt)
+            {
+                buttons[i].  interactable = false;
+            }
+        }
+    }
 
     public void OnTriggerStay2D(Collider2D other)
     {

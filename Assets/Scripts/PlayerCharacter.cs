@@ -31,7 +31,7 @@ public class PlayerCharacter : MonoBehaviour
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
-        FindObjectOfType<HealthBar>();
+        
     }
 
 
