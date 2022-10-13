@@ -7,17 +7,12 @@ using UnityEngine.UI;
 
 public class PlayerCharacter : MonoBehaviour
 {
-
-    
-
     public int level;
     public int maxHealth = 100;
     public int currentHealth;
-
     public HealthBar healthBar;
 
     public float pSpeed;
-    
     private float upDown;
     private float leftRight;
 
@@ -25,22 +20,12 @@ public class PlayerCharacter : MonoBehaviour
 
     public Rigidbody2D rb;
 
-
-
     void Start()
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
-        
-    }
-
-
-    private void Awake()
-    {
-
       
     }
-
 
     private void Update()
     {
@@ -64,8 +49,6 @@ public class PlayerCharacter : MonoBehaviour
         }
     }
 
-
-
     void Flip()
     {
         Vector3 currentScale = gameObject.transform.localScale;
@@ -84,7 +67,7 @@ public class PlayerCharacter : MonoBehaviour
     {
         PlayerData data = SaveSystem.LoadPlayer();
         SceneManager.LoadScene(level);
-
+        Time.timeScale = 1f;
         level = data.level; 
         currentHealth = data.currentHealth;
     }

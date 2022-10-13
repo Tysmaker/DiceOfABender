@@ -10,19 +10,27 @@ public class MoveToNextLevel : MonoBehaviour
     {
         nextSceneLoad = SceneManager.GetActiveScene().buildIndex + 1;
     }
-        public void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
-            if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
+        {
+            if (SceneManager.GetActiveScene().buildIndex == 7)
             {
+                Debug.Log("YOU WIN GAME");
+            }
+            else
+            {        
+
                 SceneManager.LoadScene(nextSceneLoad);
             }
 
-            if(nextSceneLoad > PlayerPrefs.GetInt("levelAt"))
+            if (nextSceneLoad > PlayerPrefs.GetInt("levelAt"))
             {
                 PlayerPrefs.SetInt("levelAt", nextSceneLoad);
             }
+        }
     }
-
-
-
 }
+
+
+
