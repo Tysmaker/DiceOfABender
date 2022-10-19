@@ -22,12 +22,12 @@ public class PlayerCharacter : MonoBehaviour
 
     void Start()
     {
-        currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
+       currentHealth = maxHealth;
+       healthBar.SetMaxHealth(maxHealth);  
       
     }
 
-    private void Update()
+    private void Update()   
     {
         upDown = Input.GetAxisRaw("Vertical");
         leftRight = Input.GetAxisRaw("Horizontal");
