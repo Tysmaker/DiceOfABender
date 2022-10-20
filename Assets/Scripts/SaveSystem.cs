@@ -27,7 +27,7 @@ public static class SaveSystem
 
             PlayerData data = formatter.Deserialize(stream) as PlayerData;
             stream.Close();
-
+            Time.timeScale = 1f;
             return data;
 
         }

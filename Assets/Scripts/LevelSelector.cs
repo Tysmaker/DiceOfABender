@@ -12,43 +12,60 @@ using UnityEngine.SceneManagement;
 
 public class LevelSelector : MonoBehaviour
 {
+    public Button[] buttons;
 
     public TextMeshProUGUI levelText;
 
     [SerializeField]
-    public string scenePath;
+   public string scenePath;
 
-    public void OnTriggerStay2D(Collider2D other)
+    void Start()
     {
-        if (other.gameObject.tag == "Player")
-        {
-            
-            levelText.gameObject.SetActive(true);
-            LevelSelection();
-        }        
-    }
+        int levelAt = PlayerPrefs.GetInt("levelAt", 2);
 
-    public void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "Player")
+        for (int i = 0; i < buttons.Length; i++)
         {
-            levelText.gameObject.SetActive(false);
+            if(i + 2 > levelAt)
+            {
+                buttons[i].interactable = false;
+            }
         }
     }
 
-    public void LevelSelection()
-    {
-        if (Input.GetKey(KeyCode.E))
-        {
-            SceneManager.LoadScene(scenePath);
-            
-        }
-    }
+     public void OnTriggerStay2D(Collider2D other)
+     {
+         if (other.gameObject.tag == "Player")
+         {
+
+             levelText.gameObject.SetActive(true);
+             //LevelSelection();
+         }        
+     }
+
+     public void OnTriggerExit2D(Collider2D other)
+     {
+         if (other.gameObject.tag == "Player")
+         {
+             levelText.gameObject.SetActive(false);
+         }
+     }
+
+
+     public void LevelSelection()
+     {
+        // if(Input.GetKey(KeyCode.E))
+         {
+             SceneManager.LoadScene(scenePath);
+
+         }
+     }
+
+     
 }
 
 
 
-    
+
 
 
 

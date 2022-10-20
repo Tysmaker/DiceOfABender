@@ -1,14 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerCharacter : MonoBehaviour
 {
-    public int level = 1;
-    public int health = 100;
+    public int level;
+    public int maxHealth = 100;
+    public int currentHealth;
+    public HealthBar healthBar;
 
     public float pSpeed;
-    
     private float upDown;
     private float leftRight;
 
@@ -16,13 +20,20 @@ public class PlayerCharacter : MonoBehaviour
 
     public Rigidbody2D rb;
 
-    private void Update()
+    void Start()
+    {
+       currentHealth = maxHealth;
+       healthBar.SetMaxHealth(maxHealth);  
+      
+    }
+
+    private void Update()   
     {
         upDown = Input.GetAxisRaw("Vertical");
         leftRight = Input.GetAxisRaw("Horizontal");
 
         rb.velocity = new Vector2(leftRight * pSpeed, upDown * pSpeed);
-            
+
         if (leftRight > 0 && !facingRight)
         {
             Flip();
@@ -30,6 +41,11 @@ public class PlayerCharacter : MonoBehaviour
         if (leftRight < 0 && facingRight)
         {
             Flip();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            TakeDamage(20);
         }
     }
 
@@ -50,8 +66,16 @@ public class PlayerCharacter : MonoBehaviour
     public void LoadPlayer ()
     {
         PlayerData data = SaveSystem.LoadPlayer();
-
+        SceneManager.LoadScene(level);
+        Time.timeScale = 1f;
         level = data.level; 
-        health = data.health;
+        currentHealth = data.currentHealth;
+    }
+
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+
+        healthBar.SetHealth(currentHealth);
     }
 }

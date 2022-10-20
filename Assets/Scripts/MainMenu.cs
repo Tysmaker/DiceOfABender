@@ -8,6 +8,8 @@ public class MainMenu : MonoBehaviour
    public void LoadScene()
     {
         SceneManager.LoadScene("LevelSelector");
+        PlayerPrefs.DeleteAll();
+
     }
 
     public void SaveGame()
