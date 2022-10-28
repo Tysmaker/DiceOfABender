@@ -8,6 +8,7 @@ public class SoundEffect : MonoBehaviour
 
     //public string Walk;
 
+    
     private void Update()
     {
         if (Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow))
@@ -32,6 +33,10 @@ public class SoundEffect : MonoBehaviour
             AudioManager.instance.Play("Walking");
         }
 
+        /*if (Input.GetMouseButton(0))
+        {
+            AudioManager.instance.Play("SelectLevel");
+        }*/
 
 
     }
