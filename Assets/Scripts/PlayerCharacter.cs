@@ -20,11 +20,15 @@ public class PlayerCharacter : MonoBehaviour
 
     public Rigidbody2D rb;
 
+
+    
+
     void Start()
     {
        currentHealth = maxHealth;
-       healthBar.SetMaxHealth(maxHealth);  
-      
+       healthBar.SetMaxHealth(maxHealth);
+       
+
     }
 
     private void Update()   
