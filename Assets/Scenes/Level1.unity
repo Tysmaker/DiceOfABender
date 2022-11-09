@@ -2732,6 +2732,63 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1001 &299427805
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1748277833513447089, guid: 10fb3f966079d424d8e07de19e54d677, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748277833513447089, guid: 10fb3f966079d424d8e07de19e54d677, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748277833513447089, guid: 10fb3f966079d424d8e07de19e54d677, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748277833513447089, guid: 10fb3f966079d424d8e07de19e54d677, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748277833513447089, guid: 10fb3f966079d424d8e07de19e54d677, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748277833513447089, guid: 10fb3f966079d424d8e07de19e54d677, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748277833513447089, guid: 10fb3f966079d424d8e07de19e54d677, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748277833513447089, guid: 10fb3f966079d424d8e07de19e54d677, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748277833513447089, guid: 10fb3f966079d424d8e07de19e54d677, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748277833513447089, guid: 10fb3f966079d424d8e07de19e54d677, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748277833513447089, guid: 10fb3f966079d424d8e07de19e54d677, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748277833513447091, guid: 10fb3f966079d424d8e07de19e54d677, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 10fb3f966079d424d8e07de19e54d677, type: 3}
 --- !u!1 &308532487
 GameObject:
   m_ObjectHideFlags: 0
@@ -3029,6 +3086,7 @@ GameObject:
   - component: {fileID: 435159306}
   - component: {fileID: 435159308}
   - component: {fileID: 435159309}
+  - component: {fileID: 435159310}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Player
@@ -3188,6 +3246,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.96}
   m_EdgeRadius: 0
+--- !u!114 &435159310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435159303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41057a0d8eaf2f6408586bd5f5c155ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &444925357
 GameObject:
   m_ObjectHideFlags: 0
@@ -7751,6 +7821,7 @@ GameObject:
   - component: {fileID: 1963472148}
   - component: {fileID: 1963472147}
   - component: {fileID: 1963472146}
+  - component: {fileID: 1963472149}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -7808,6 +7879,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1963472149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963472145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3d14b5363fe86f4086b96dee93dc301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Soundtrack: LevelFire
 --- !u!1 &1970498091
 GameObject:
   m_ObjectHideFlags: 0

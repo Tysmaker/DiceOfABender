@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-   public void LoadScene()
+
+    public void LoadScene()
     {
         SceneManager.LoadScene("LevelSelector");
         PlayerPrefs.DeleteAll();

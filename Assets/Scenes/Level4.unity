@@ -1482,6 +1482,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 623834837}
   m_CullTransparentMesh: 1
+--- !u!1001 &631018149
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1748277833513447089, guid: 10fb3f966079d424d8e07de19e54d677, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748277833513447089, guid: 10fb3f966079d424d8e07de19e54d677, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748277833513447089, guid: 10fb3f966079d424d8e07de19e54d677, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748277833513447089, guid: 10fb3f966079d424d8e07de19e54d677, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748277833513447089, guid: 10fb3f966079d424d8e07de19e54d677, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748277833513447089, guid: 10fb3f966079d424d8e07de19e54d677, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748277833513447089, guid: 10fb3f966079d424d8e07de19e54d677, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748277833513447089, guid: 10fb3f966079d424d8e07de19e54d677, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748277833513447089, guid: 10fb3f966079d424d8e07de19e54d677, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748277833513447089, guid: 10fb3f966079d424d8e07de19e54d677, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748277833513447089, guid: 10fb3f966079d424d8e07de19e54d677, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748277833513447091, guid: 10fb3f966079d424d8e07de19e54d677, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 10fb3f966079d424d8e07de19e54d677, type: 3}
 --- !u!1 &649800489
 GameObject:
   m_ObjectHideFlags: 0
@@ -4243,6 +4300,7 @@ GameObject:
   - component: {fileID: 1128711605}
   - component: {fileID: 1128711604}
   - component: {fileID: 1128711603}
+  - component: {fileID: 1128711609}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Player
@@ -4402,6 +4460,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1128711609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128711602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41057a0d8eaf2f6408586bd5f5c155ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1136054188
 GameObject:
   m_ObjectHideFlags: 0
@@ -4648,6 +4718,7 @@ GameObject:
   - component: {fileID: 1305543567}
   - component: {fileID: 1305543566}
   - component: {fileID: 1305543565}
+  - component: {fileID: 1305543568}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -4705,6 +4776,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1305543568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305543564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3d14b5363fe86f4086b96dee93dc301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Soundtrack: LevelAir
 --- !u!1 &1351786394
 GameObject:
   m_ObjectHideFlags: 0

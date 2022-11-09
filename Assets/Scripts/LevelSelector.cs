@@ -21,15 +21,21 @@ public class LevelSelector : MonoBehaviour
 
     void Start()
     {
+
         int levelAt = PlayerPrefs.GetInt("levelAt", 2);
 
         for (int i = 0; i < buttons.Length; i++)
         {
-            if(i + 2 > levelAt)
+
+            if (i + 2 > levelAt)
             {
                 buttons[i].interactable = false;
             }
         }
+
+        
+
+
     }
 
      public void OnTriggerStay2D(Collider2D other)

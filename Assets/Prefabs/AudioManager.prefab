@@ -1,0 +1,167 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1748277833513447091
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1748277833513447089}
+  - component: {fileID: 1748277833513447090}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1748277833513447089
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748277833513447091}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1748277833513447090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748277833513447091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b6bf2fee8478414988b982680047fc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: MainMenu
+    clip: {fileID: 8300000, guid: 2ad05ab696e6cb147b4640e95dbbe7c5, type: 3}
+    volume: 0.441
+    pitch: 1.36
+    loop: 1
+    source: {fileID: 0}
+  - name: LevelFire
+    clip: {fileID: 8300000, guid: 76c0adc9e3f780a4b9d68b734d7c8aca, type: 3}
+    volume: 0.06
+    pitch: 1.36
+    loop: 1
+    source: {fileID: 0}
+  - name: LevelEarth
+    clip: {fileID: 8300000, guid: 221daabdb0e2e724390b77cb4eea64cf, type: 3}
+    volume: 0.06
+    pitch: 1.36
+    loop: 1
+    source: {fileID: 0}
+  - name: LevelWater
+    clip: {fileID: 8300000, guid: 6aca39a3f255c3f48b85739950ee2c19, type: 3}
+    volume: 0.1
+    pitch: 1.36
+    loop: 1
+    source: {fileID: 0}
+  - name: LevelAir
+    clip: {fileID: 8300000, guid: 8d8aabc7f507d244ab3946f0fc0de404, type: 3}
+    volume: 0.06
+    pitch: 1.36
+    loop: 1
+    source: {fileID: 0}
+  - name: LevelLight
+    clip: {fileID: 8300000, guid: e2f5cc7f21e8ad74e9af8265ca9d30a6, type: 3}
+    volume: 0.06
+    pitch: 1.36
+    loop: 1
+    source: {fileID: 0}
+  - name: LevelDarkness
+    clip: {fileID: 8300000, guid: 7831cb1acf581954181eb4bd9814a610, type: 3}
+    volume: 0.06
+    pitch: 1.36
+    loop: 1
+    source: {fileID: 0}
+  - name: LevelDarkMagician
+    clip: {fileID: 8300000, guid: c817ac0f06c701748994631d21936fa5, type: 3}
+    volume: 0.06
+    pitch: 1.36
+    loop: 1
+    source: {fileID: 0}
+  - name: LevelSelector
+    clip: {fileID: 8300000, guid: b7b8d6a3a995dbd43ad1eba87e74f194, type: 3}
+    volume: 0.06
+    pitch: 1.36
+    loop: 1
+    source: {fileID: 0}
+  - name: EnermyHit
+    clip: {fileID: 8300000, guid: eac10a9cfcf0e8d41b82a322354b6b42, type: 3}
+    volume: 0.441
+    pitch: 1.36
+    loop: 0
+    source: {fileID: 0}
+  - name: Attack
+    clip: {fileID: 8300000, guid: d3dd2275494b3204596fd8e15e0f0735, type: 3}
+    volume: 0.441
+    pitch: 1.36
+    loop: 0
+    source: {fileID: 0}
+  - name: ChooseCard
+    clip: {fileID: 8300000, guid: b565c69f7e05b814e908e1b5f18dbd81, type: 3}
+    volume: 0.441
+    pitch: 1.36
+    loop: 0
+    source: {fileID: 0}
+  - name: ChooseElement
+    clip: {fileID: 8300000, guid: bfd505f5b028b8a4d97e30121fee781c, type: 3}
+    volume: 0.441
+    pitch: 1.36
+    loop: 0
+    source: {fileID: 0}
+  - name: DiceRolling
+    clip: {fileID: 8300000, guid: 57c40fb1e59e6be4a94c487315f0f6f5, type: 3}
+    volume: 0.441
+    pitch: 1.36
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerHit
+    clip: {fileID: 8300000, guid: 655921b2a80c7204fae4e2ee4b681257, type: 3}
+    volume: 0.441
+    pitch: 1.36
+    loop: 0
+    source: {fileID: 0}
+  - name: GameStart
+    clip: {fileID: 8300000, guid: d8ad90c56574e3848a605581051a3f91, type: 3}
+    volume: 0.441
+    pitch: 1.36
+    loop: 0
+    source: {fileID: 0}
+  - name: GameOver
+    clip: {fileID: 8300000, guid: 2f514db54c2b1ec4c98c66ff42aebf5d, type: 3}
+    volume: 0.441
+    pitch: 1.36
+    loop: 0
+    source: {fileID: 0}
+  - name: GameWin
+    clip: {fileID: 8300000, guid: aaab4ef3b88b63e41a690f1d874829ae, type: 3}
+    volume: 0.441
+    pitch: 1.36
+    loop: 0
+    source: {fileID: 0}
+  - name: Walking
+    clip: {fileID: 8300000, guid: 9c1cde4cba97e3240be2830661c74590, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SelectLevel
+    clip: {fileID: 8300000, guid: 0ee855f48cb49da4c893f819be8d2497, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
