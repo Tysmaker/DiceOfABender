@@ -3888,6 +3888,7 @@ GameObject:
   - component: {fileID: 543266543}
   - component: {fileID: 543266542}
   - component: {fileID: 543266541}
+  - component: {fileID: 543266544}
   m_Layer: 5
   m_Name: Player_Cards
   m_TagString: Untagged
@@ -3979,6 +3980,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &543266544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543266539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 439a71b3849844c4cb9873c637e6f360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &546110178
 GameObject:
   m_ObjectHideFlags: 0

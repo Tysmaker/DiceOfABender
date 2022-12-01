@@ -33,10 +33,10 @@ public class SoundEffect : MonoBehaviour
             AudioManager.instance.Play("Walking");
         }
 
-        /*if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0))
         {
             AudioManager.instance.Play("SelectLevel");
-        }*/
+        }
 
 
     }

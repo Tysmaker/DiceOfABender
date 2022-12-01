@@ -61,9 +61,11 @@ public class LevelSelector : MonoBehaviour
      {
         // if(Input.GetKey(KeyCode.E))
          {
-             SceneManager.LoadScene(scenePath);
+            AudioManager.instance.Play("SelectLevel");
+            
+             
 
-         }
+        }
      }
 
      
