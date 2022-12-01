@@ -79,7 +79,9 @@ public class PlayerCharacter : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        AudioManager.instance.Play("PlayerHit");
 
         healthBar.SetHealth(currentHealth);
+
     }
 }

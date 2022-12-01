@@ -17,6 +17,7 @@ public class MoveToNextLevel : MonoBehaviour
             if (SceneManager.GetActiveScene().buildIndex == 7)
             {
                 Debug.Log("YOU WIN GAME");
+                AudioManager.instance.Play("GameWin");
             }
             else
             {        
