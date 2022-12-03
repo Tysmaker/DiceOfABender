@@ -13,7 +13,7 @@ public class PlayerData
     public PlayerData (PlayerCharacter playerCharacter)
     {
         level = playerCharacter.level;  
-        currentHealth = playerCharacter.currentHealth;
+        //currentHealth = playerCharacter.currentHealth;
     }
 }
    
