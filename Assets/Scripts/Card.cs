@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Card
 {
+<<<<<<< Updated upstream
     public int id;
     public int damage;
 
@@ -23,5 +24,19 @@ public class Card
         damage = Damage;
         description = Description;
         image = Image;
+=======
+
+    
+    public string description;
+
+    public Sprite element;
+
+    public int attack;
+    
+
+    public void Print()
+    {
+        Debug.Log(description);
+>>>>>>> Stashed changes
     }
 }

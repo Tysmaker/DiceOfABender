@@ -1,36 +1,36 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance;
+    public static GameManager Instance;
 
-    //public GameState state;
+    public GameState State;
 
-    /*public static event Action<GameState> OnGameStateChanged;
+    public static event Action<GameState> OnGameStateChanged;
 
     void Awake()
     {
-        instance = this;
+        Instance = this;
     }
 
     void Start()
     {
-
+        UpdateGameState(GameState.PlayerTurn);
     }
 
     public void UpdateGameState(GameState newState)
     {
-        state = newState;
+        State = newState;
 
         switch (newState)
         {
-            case GameState.Dialogue;
-                break;
+            
             case GameState.PlayerTurn:
                 break;
-            case GameState.Enemyturn:
+            case GameState.EnemyTurn:
                 break;
             case GameState.Victory:
                 break;
@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
                 throw new ArgumentOutOfRangeException(nameof(newState), newState, null);
         }
 
-        OnGameStateChanged?.invoke(newState);
+        OnGameStateChanged?.Invoke(newState);
     }
 
 
@@ -63,6 +63,6 @@ public class GameManager : MonoBehaviour
 
 
 
-    */
+    
 
 }

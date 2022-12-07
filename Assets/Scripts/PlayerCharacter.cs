@@ -8,9 +8,9 @@ using UnityEngine.UI;
 public class PlayerCharacter : MonoBehaviour
 {
     public int level;
-    public int maxHealth = 100;
-    public int currentHealth;
-    public HealthBar healthBar;
+   // public int maxHealth = 100;
+   // public int currentHealth;
+   // public HealthBar healthBar;
 
     public float pSpeed;
     private float upDown;
@@ -25,8 +25,9 @@ public class PlayerCharacter : MonoBehaviour
 
     void Start()
     {
-       currentHealth = maxHealth;
-       healthBar.SetMaxHealth(maxHealth);
+      // GetComponent<PlayerCharacter>().healthBar = healthBar;
+      // currentHealth = maxHealth;
+      // healthBar.SetMaxHealth(maxHealth);
        
 
     }
@@ -73,15 +74,21 @@ public class PlayerCharacter : MonoBehaviour
         SceneManager.LoadScene(level);
         Time.timeScale = 1f;
         level = data.level; 
-        currentHealth = data.currentHealth;
+       // currentHealth = data.currentHealth;
     }
 
     public void TakeDamage(int damage)
     {
+<<<<<<< Updated upstream
         currentHealth -= damage;
         AudioManager.instance.Play("PlayerHit");
 
         healthBar.SetHealth(currentHealth);
 
+=======
+      //  currentHealth -= damage;
+
+        //healthBar.SetHealth(currentHealth);
+>>>>>>> Stashed changes
     }
 }
