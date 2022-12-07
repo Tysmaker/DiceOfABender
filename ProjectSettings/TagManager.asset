@@ -58,3 +58,6 @@ TagManager:
   - name: ForeGround
     uniqueID: 1870283387
     locked: 0
+  - name: FX
+    uniqueID: 1282737389
+    locked: 0

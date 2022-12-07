@@ -9,6 +9,6 @@ public class BackgroundMusic : MonoBehaviour
     private void Start()
     {
         string soundtrack = Soundtrack;
-        AudioManager.instance.Play(soundtrack);
+       // AudioManager.instance.Play(soundtrack);
     }
 }
